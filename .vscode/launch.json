@@ -2,6 +2,20 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "Math_Test",
+      "request": "launch",
+      "mainClass": "Math_Test",
+      "projectName": "Spring2024_36f687e6"
+    },
+    {
+      "type": "java",
+      "name": "tester",
+      "request": "launch",
+      "mainClass": "tester",
+      "projectName": "Spring2024_36f687e6"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",

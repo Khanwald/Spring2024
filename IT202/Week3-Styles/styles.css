@@ -1,0 +1,26 @@
+/* styles.css */
+
+/* Use the three different methods to specify colors for the heading cells */
+.heading-cell-1 {
+    background-color: green; /* Method 1 */
+  }
+  
+  .heading-cell-2 {
+    background-color: #0000FF; /* Method 2 */
+  }
+  
+  .heading-cell-3 {
+    background-color: rgb(255, 255, 0); /* Method 3 */
+  }
+  
+  .heading-cell-4 {
+    background-color: blue; /* Repeat Method 1 for the fourth cell */
+  }
+  
+  /* Common styles for all heading cells */
+  .heading-cell {
+    text-align: center;
+    border: 2px solid blue;
+  }
+  
+  
