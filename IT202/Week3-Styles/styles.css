@@ -1,26 +1,33 @@
-/* styles.css */
-
-/* Use the three different methods to specify colors for the heading cells */
-.heading-cell-1 {
-    background-color: green; /* Method 1 */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
   }
   
-  .heading-cell-2 {
-    background-color: #0000FF; /* Method 2 */
-  }
-  
-  .heading-cell-3 {
-    background-color: rgb(255, 255, 0); /* Method 3 */
-  }
-  
-  .heading-cell-4 {
-    background-color: blue; /* Repeat Method 1 for the fourth cell */
-  }
-  
-  /* Common styles for all heading cells */
-  .heading-cell {
+  th{
     text-align: center;
-    border: 2px solid blue;
+    border: 5px solid blue;
+    padding: 15px;
+  }
+
+  #head1 {
+    background-color: rgb(176, 224, 230); 
   }
   
+  #head2 {
+    background-color: #ffdab9; 
+  }
+  
+  #head3 {
+    background-color: rgb(152, 251, 152);
+  }
+  
+  #head4 {
+    background-color: lavenderblush;
+  }
+  
+
+
   

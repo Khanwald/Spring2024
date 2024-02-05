@@ -12,6 +12,7 @@ int main() {
     cout << "Enter the name of a file to read from: " << endl;
     cin >> filename;
     
+    
     myFile.open(filename.c_str());
     
     if(!myFile){
