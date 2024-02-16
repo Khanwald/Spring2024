@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Select</title>
+</head>
+<body>
+    <div id="info">
+        <form class="form">
+            <h1>Holistic Hand Healers</h1>
+            <label for="fname">Therapist's First Name:</label> <input type="text" id="fname" name="fname"><b>REQUIRED</b><br>
+            <label for="lname">Therapist's Last Name:</label> <input type="text" id="lname" name="lname"><b>REQUIRED</b><br>
+            <label for="password">Therapist's Password:</label> <input type="password" id="password" name="password"><b>REQUIRED</b><br>
+            <label for="id">Therapist's ID #:</label> <input type="text" id="id" name="id"><b>REQUIRED</b><br>
+            <label for="phone">Therapist's Phone #:</label> <input type="tel" id="phone" name="phone"><b>REQUIRED</b><br>
+            <label for="email">Therapist's Email:</label> <input type="email" id="email" name="email"><br>
+            <input type="checkbox" id="emailconfirmation" name="emailconfirmation" value="coke"><label for="emailconfirmation">Check the box to request an Email Confirmation:</label><br>
+            <label for="transaction">Select a Transaction:</label> 
+                <select name="transaction" id="transaction">
+                    <option value="select">Select A Therapist's Accounts</option>
+                    <option value="book">Book a Client's Session</option>
+                    <option value="update">Update a Client's Records</option>
+                    <option value="cancel">Cancel A Patient's Session</option>
+                    <option value="request">Request Medical Devices</option>
+                    <option value="create">Create A New Patient</option>
+                </select> 
+                <br>
+            <div id="button-container"><button type="submit">Submit</button> <button type="reset">Reset</button></div>
+        </form>
+    </div>
+</body>
+</html>

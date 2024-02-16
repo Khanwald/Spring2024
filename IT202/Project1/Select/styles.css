@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url("background-image1.jpg");
+    background-size:cover;
+    background-color: black;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#info{
+    background-color: rgba(135, 225, 248, 0.499);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:40%;
+    height: 80%;
+    border-radius: 30px;
+    box-shadow: 0 7px 11px 0 rgba(11, 19, 25, 0.7), 0 9px 23px 0 rgba(11, 19, 25, 0.8);
+    color: rgb(0, 0, 0);
+    border:5px solid rgb(86, 83, 194)
+}
+
+label{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 5%;
+}
+.form{
+    height:90%;
+    position: relative;
+}
+.form h1{
+    text-align: center;
+}
+.form label:not([for="emailconfirmation"], [for="transaction"]) {
+    width: 200px;
+  }  
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"]{
+    margin-bottom: 10px;
+    width: 10vw;
+    box-sizing: border-box;
+}
+button {
+    background-color: #535d67; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+
+}
+button:hover{
+    background-color: black;
+}
+#button-container{
+    position: absolute;
+    right:0px;
+    bottom: 0px;
+}

@@ -2,8 +2,8 @@
 #include <fstream>
 #include <string>
 #include <sstream>
-
 using namespace std;
+// Caleb Osorio CS280-004
 
 bool int_check(string word){
     for (auto &ch : word) { 
@@ -19,11 +19,16 @@ bool name_check(string word){
     } 
     return true;
 }
+
 int main(int argc, char* argv[]) {
     
+    if(argc == 1){
+        cerr << "NO SPECIFIED INPUT FILE NAME." <<endl;
+        exit(1);
+    }
     
     ifstream myFile;
-    string filename = "infile5";
+    string filename(argv[1]);
     myFile.open(filename.c_str());
     
     if(!myFile){
@@ -34,6 +39,7 @@ int main(int argc, char* argv[]) {
         cout << "File is empty." <<endl;
         exit(1);
     }
+    
     string text;
     int total_lines = 0;
     int non_blank_lines = 0;
@@ -47,15 +53,15 @@ int main(int argc, char* argv[]) {
     while(getline(myFile, text) && !myFile.eof()){
         ++total_lines;
         istringstream sloop(text);
-            
+        if(text.length() > 0){++non_blank_lines;}
+        
         do{
             string word;
             sloop >> word;
+           
             if(word.find_first_not_of(' ') != std::string::npos){
                 num_words += 1; 
-                
                 if(name_check(word)){
-                    cout << word <<endl;
                     ++num_names;
                 }
                 else if(int_check(word)){
@@ -73,6 +79,7 @@ int main(int argc, char* argv[]) {
 
         } while (sloop);
     }
+    myFile.close();
     cout << "Total Number of Lines: " << total_lines << endl;
     cout << "Number of non-blank lines: " << non_blank_lines << endl;
     cout << "Number of Words: " << num_words << endl;
